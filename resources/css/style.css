@@ -3,8 +3,203 @@
   padding: 0;
 }
 
+html {
+  opacity: 0.9;
+}
+body {
+  background-color: black;
+  color: seashell;
+  font-family: helvetica;
+  font-size: 22px;
+  text-align: center;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h1, h2, h3, h4, h5 {
+    padding: 10px;
+}
+
+p {
+ padding: 10px;
+}
+
+nav {
+
+}
+
+a {
+  color: seashell;
+}
+
+section {
+  margin: 35px auto;
+}
+
+/* Utilities */
+
+.container {
+  max-width: 1000px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Header */
+
 header {
+  width: 100%;
+  align-items: center;
+  border-bottom:1px solid seashell;
+  padding:25px 0px;
+  background-color: black;
+}
+
+header .logo {
+  flex-grow: 1;
+  text-align: left;
+  padding-top: 5px;  /* Image was cropped impropperly, added padding to center visually */
+}
+
+header .logo img {
+  margin-left:10px;
+  height:50px;
+}
+
+header nav span {
+  padding: 5px 10px;
+  display: block;
+  transition: ease all 0.3s;
+  opacity: 0.6; /* added for a more dramatic hover state */
+}
+
+header nav span:hover {
+  opacity: 1;
+  color: #fff;
+  transition: ease all 0.3s;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 69px;
+    padding:0px;
+  }
+  header nav span {
+    display: inline-block;
+  }
+}
+
+/* Hero */
+
+.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;;
+  background-image: url(../images/img-mission-background.jpg);
+  align-items: center;
+  position: relative;
+  /* max-width: 1200px;   Add to constrain like the spec sheet, but would recomend full width hero instead */
+  margin: 0 auto;
+  height: 700px;
+  position: relative;
+}
+
+.hero-content {
+  margin: 300px 0px;
+  width:100%;
+  background-color: black;
+}
+
+@media only screen and (min-width: 768px) {
+ .hero {
+   margin-top:70px;
+ }
+}
+
+/* Main */
+
+.main {
+
+}
+.main .tea {
+  margin:5px;
+}
+.main .tea h4 {
+  padding: 0px;
+}
+.main img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+.main .content {
+  justify-content:center;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+
+/* Locations */
+
+.locations {
+  background-image: url(../images/img-locations-background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0px;
+  min-height: 460px;
   display: flex;
   align-items: center;
-  border:1px solid grey;
+  justify-content: center;
+  /* max-width: 1200px;   Add to constrain like the spec sheet, but would recomend full width here too */
+}
+
+.locations .content {
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.locations .location {
+  background-color: black;
+  width: 300px;
+  margin: 20px 20px;
+  padding:  15px 0px;
+  opacity:1;
+}
+
+.locations .location p {
+    padding: 15px;
+}
+
+/* Footer */
+
+.copyright {
+  text-align: center;
+  margin  : 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .copyright {
+    text-align: left;
+  }
 }
