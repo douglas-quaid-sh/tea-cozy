@@ -6,6 +6,7 @@
 html {
   opacity: 0.9;
 }
+
 body {
   background-color: black;
   color: seashell;
@@ -46,8 +47,9 @@ a {
   color: seashell;
 }
 
-section {
-  margin: 35px auto;
+section, footer {
+  padding-top: 70px;
+  margin: 0 auto;
 }
 
 /* Utilities */
