@@ -32,11 +32,11 @@ h4 {
 }
 
 h1, h2, h3, h4, h5 {
-    padding: 10px;
+  padding: 10px;
 }
 
 p {
- padding: 10px;
+  padding: 10px;
 }
 
 nav {
@@ -67,8 +67,8 @@ section, footer {
 header {
   width: 100%;
   align-items: center;
-  border-bottom:1px solid seashell;
-  padding:25px 0px;
+  border-bottom: 1px solid seashell;
+  padding: 25px 0px;
   background-color: black;
 }
 
@@ -79,8 +79,8 @@ header .logo {
 }
 
 header .logo img {
-  margin-left:10px;
-  height:50px;
+  margin-left: 10px;
+  height: 50px;
 }
 
 header nav span {
@@ -103,11 +103,13 @@ header nav span:hover {
     top: 0;
     z-index: 1;
     height: 69px;
-    padding:0px;
+    padding: 0px;
   }
+
   header nav span {
     display: inline-block;
   }
+
 }
 
 /* Hero */
@@ -127,27 +129,35 @@ header nav span:hover {
 
 .hero-content {
   margin: 300px 0px;
-  width:100%;
+  width: 100%;
   background-color: black;
 }
 
+section.nav-offset {
+  padding-top: 0px;
+}
+
 @media only screen and (min-width: 768px) {
- .hero {
-   margin-top:70px;
+section.nav-offset {
+   padding-top: 70px;
  }
+ 
 }
 
 /* Main */
 
 .main {
+  margin: 0 auto;
+}
 
-}
 .main .tea {
-  margin:5px;
+  margin: 5px;
 }
+
 .main .tea h4 {
   padding: 0px;
 }
+
 .main img {
   width: 300px;
   height: 200px;
@@ -155,11 +165,10 @@ header nav span:hover {
 }
 
 .main .content {
-  justify-content:center;
+  justify-content: center;
   max-width: 1000px;
   flex-wrap: wrap;
 }
-
 
 /* Locations */
 
@@ -178,26 +187,25 @@ header nav span:hover {
 .locations .content {
   justify-content: center;
   flex-wrap: wrap;
-
 }
 
 .locations .location {
   background-color: black;
   width: 300px;
   margin: 20px 20px;
-  padding:  15px 0px;
-  opacity:1;
+  padding: 15px 0px;
+  opacity: 1;
 }
 
 .locations .location p {
-    padding: 15px;
+  padding: 15px;
 }
 
 /* Footer */
 
 .copyright {
   text-align: center;
-  margin  : 20px;
+  margin: 20px;
 }
 
 @media only screen and (min-width: 768px) {
